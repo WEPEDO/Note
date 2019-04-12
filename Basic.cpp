@@ -3,8 +3,7 @@
 
 int main()
 {
-    printf("sudhisdj");
-    printf("sjdsijdisjdisjd");
+    printf("真费劲！！！");
     system("pause");
     return 0;
 }
