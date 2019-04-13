@@ -3,7 +3,7 @@
  * @LastEditors: WenPeidong
  * @Description: file content
  * @Date: 2019-04-12 12:32:17
- * @LastEditTime: 2019-04-13 15:16:10
+ * @LastEditTime: 2019-04-13 15:38:25
  */
 // # include<stdio.h>
 // # include<stdlib.h>
@@ -117,3 +117,12 @@
 //        system("pause");
 //        return 0;
 // }
+/**
+ * 复合文字结构
+ * 
+ * 复合文字签发不仅适用于数组， 也适用于结构。
+ * 可以使用复合文字创建一个被用来作为函数参数或被赋值给另一个结构的结构。
+ * 语法是把类型名写在圆括号中，后跟一个用花括号括起来的初始化项目列表
+ * e.g:  (struct phonebook) {"zhangsan" ,"21198128989"}
+ * 
+ 
