@@ -15,48 +15,50 @@
 //     return 0;
 // }
 
-char* copy(char* dest, const char* src)
-{
-       if((dest = NULL) && (src = NULL))
-       {
-             printf("无效参数。");
-             return NULL;
-       }
-       char* get = dest;
-       memcopy(dest,src,strlen(src)+1);
-       return get;
+// char* copy(char* dest, const char* src)
+// {
+//        if((dest = NULL) && (src = NULL))
+//        {
+//              printf("无效参数。");
+//              return NULL;
+//        }
+//        char* get = dest;
+//        memcopy(dest,src,strlen(src)+1);
+//        return get;
 
-}
+// }
 
  
 
-char* memcopy(char* dest,const char* src,unsigned int len)
-{
-        if((dest =NULL) &&(src = NULL))
-        {
-             printf("无效参数。");
-             return NULL;
-         }
-         char* get = dest;
-         if((get+len) <= src || get > (src+len))
-         {
-               while(len--)
-               {
-                    *get = *src;
-                     get++;
-                     src++; 
-                 }
-         }
-         else
-         {
-                 get = get + len -1;
-                 src = src + len - 1;
-                 while(len--)
-                 {
-                        *get = *src;
-                         get--;
-                         src--;
-                  }
-        }
-       return dest;
-}
+// char* memcopy(char* dest,const char* src,unsigned int len)
+// {
+//         if((dest =NULL) &&(src = NULL))
+//         {
+//              printf("无效参数。");
+//              return NULL;
+//          }
+//          char* get = dest;
+//          if((get+len) <= src || get > (src+len))
+//          {
+//                while(len--)
+//                {
+//                     *get = *src;
+//                      get++;
+//                      src++; 
+//                  }
+//          }
+//          else
+//          {
+//                  get = get + len -1;
+//                  src = src + len - 1;
+//                  while(len--)
+//                  {
+//                         *get = *src;
+//                          get--;
+//                          src--;
+//                   }
+//         }
+//        return dest;
+// }
+
+
