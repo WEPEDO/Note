@@ -3,7 +3,7 @@
  * @LastEditors: WenPeidong
  * @Description: file content
  * @Date: 2019-04-12 12:32:17
- * @LastEditTime: 2019-04-13 14:25:25
+ * @LastEditTime: 2019-04-13 15:16:10
  */
 // # include<stdio.h>
 // # include<stdlib.h>
@@ -60,5 +60,60 @@
 //         }
 //        return dest;
 // }
+/**
+ * 关于 内存是否重叠，牢记两个恒等式
+ * array[i] == *(ptr +i)
+ * &array[i] == ptr + i
+ * */
 
+/** 
+ * 结构体
+ * 关键字; struct
+ * e.g    struct student{
+ *     char name[20];
+ *     int number;
+ *  }
+ **/
 
+// # include<stdio.h>
+// # include<stdlib.h>
+
+// // 结构体定义
+// struct Student{
+//        char Name[10];
+//        int ID;
+// };
+
+// int main()
+// {
+//     struct Student A;
+//     printf("Please input A's Name:\n");
+//     gets(A.Name);
+//     printf("Please input A's ID:\n");
+//     scanf("%d", A.ID);
+//     printf("A's Name is : %s\n", A.Name);
+//     printf("A's ID is : %d\n", A.ID);
+//     system("pause");
+//     return 0;
+// }
+// 复杂版
+// # include<stdio.h>
+// # include<stdlib.h>
+
+// struct Student{
+//        char Name[10];
+//        int ID;
+// };
+
+// int main()
+// {
+//        struct Student *A = (struct Student *)malloc(sizeof(struct Student)); 
+//        printf("Please input A's Name:\n");
+//        gets(A -> Name);
+//        printf("Please input A's ID:\n");
+//        scanf("%d", &A -> ID);
+//        printf("A's Name is : %s\n", A ->Name);
+//        printf("A's ID is : %d\n", A ->ID);
+//        system("pause");
+//        return 0;
+// }
