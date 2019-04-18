@@ -3,7 +3,7 @@
  * @LastEditors: WenPeidong
  * @Description: file content
  * @Date: 2019-04-12 12:32:17
- * @LastEditTime: 2019-04-14 11:51:26
+ * @LastEditTime: 2019-04-18 13:26:19
  */
 // # include<stdio.h>
 // # include<stdlib.h>
@@ -215,20 +215,20 @@
 //     return 0;
 // }
 
-// #include <stdio.h>
-// #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-// int main()
-// {
-//     char ch[44];
-//     FILE *ftp;
-//     FILE *ftp2;
-//     ftp = fopen("lili.txt", "r");
-//     ftp2 = fopen("write.txt", "w");
-//     if (ftp == NULL)
-//         printf("open file filed");
-//     while (fgets(ch, 44, ftp) != NULL) 
-//         fputs(ch, ftp2);
-//     system("pause");
-//     return 0;
-// }
+int main()
+{
+    char ch[44];
+    FILE *ftp;
+    FILE *ftp2;
+    ftp = fopen("lili.txt", "r");
+    ftp2 = fopen("write.txt", "w");
+    if (ftp == NULL)
+        printf("open file filed");
+    while (fgets(ch, 44, ftp) != NULL) 
+        fputs(ch, ftp2);
+    system("pause");
+    return 0;
+}
