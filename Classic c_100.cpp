@@ -3,7 +3,7 @@
  * @LastEditors: WenPeidong
  * @Description: file content
  * @Date: 2019-04-18 13:49:41
- * @LastEditTime: 2019-04-18 14:14:52
+ * @LastEditTime: 2019-04-18 14:33:03
  */
 
 
@@ -32,7 +32,7 @@
 //     return 0;
 // }
 
-// 程序2
+//程序2
 // # include <stdlib.h>
 // # include <stdio.h>
 
@@ -61,4 +61,23 @@
 //         printf("bonus=%d\n", bonus);
 //     system("pause");
 //     return 0;
+// }
+
+// 程序3
+// # include<stdio.h>
+// # include<stdlib.h>
+// # include<math.h>
+
+// int main()
+// {
+//     long int i,x, y;
+//     for(i = 1; i <1000; i ++)
+//         {
+//             x = sqrt(i + 100);
+//             y = sqrt(i + 168);
+//             if(x*x == i + 100&&y*y == 1 +168)
+//                 printf("\n%ld\n", i); 
+//         }
+//     system("pause");  
+//     return 0;      
 // }
